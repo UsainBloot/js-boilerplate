@@ -1,6 +1,6 @@
 {
-  "name": "js-boilerplate",
-  "version": "0.0.1",
+  "name": "js-gulp-boilerplate",
+  "version": "1.0.0",
   "description": "My personal boilerplate for JS heavy sites",
   "main": "gulpfile.js",
   "directories": {
