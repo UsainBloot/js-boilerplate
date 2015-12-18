@@ -21,6 +21,7 @@ module.exports = {
 
   styles: {
     src: ['source/scss/main.scss'],
+    all: ['source/scss/**/*.scss'],
     dest: 'public/css/',
     sassIncludePaths: []
   },
@@ -48,7 +49,7 @@ module.exports = {
 
   images: {
     src: ['source/images/**/*.*'],
-    dest: 'public/img'
+    dest: 'public/images'
   },
 
   fonts: {
