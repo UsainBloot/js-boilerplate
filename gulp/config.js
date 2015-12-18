@@ -4,7 +4,7 @@ module.exports = {
 
   files: {
     default_file: 'index.html',
-    asset_extensions: ['js', 'css', 'png', 'jpg', 'jpeg', 'gif', 'ttf', 'woff', 'woff2']
+    asset_extensions: ['html', 'js', 'css', 'png', 'jpg', 'jpeg', 'gif', 'ttf', 'woff', 'woff2']
   },
 
   tests: {
