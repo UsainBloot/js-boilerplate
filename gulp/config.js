@@ -53,7 +53,7 @@ module.exports = {
   },
 
   fonts: {
-    src: ['source/fonts'],
+    src: ['source/fonts/**/*.*'],
     dest: 'public/fonts'
   },
 
