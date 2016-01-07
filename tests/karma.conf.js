@@ -18,6 +18,7 @@ module.exports = function(config) {
       '../node_modules/chai/chai.js',
       '../public/js/vendor.js',
       '../public/js/**/*.js',
+      './data/*.js',
       './unit/*.js'
     ],
 
