@@ -42,8 +42,13 @@ The JavaScript is structered as *pages*, *modules* and *data* and collated using
 
 You should try to structure JavaScript files based on whether they are page specific (therefore should be in the relevant file in `/source/js/page` folder) otherwise as a *module*.
 
-The entry point is in `/source/js/main.js` and is present on every page. Each page should be required and initialised based on whether the body's class.
+The entry point is in `/source/js/main.js` and is present on every page. Each page should be required and initialised based on whether the body's class. eg.
 
+```javascript
+if($('body.pageName').length) {
+  new Page();
+}
+```
 These page JavaScript objects should then require any required modules as well as any static data needed.
 
 The overall call stack should look like this...
@@ -73,6 +78,9 @@ All variables should be stored in `/source/scss/_vars.scss`.
 All common fonts or typography styling should be set in `/source/scss/_typography.scss`.
 
 When adding new fonts make sure they are added to the `/source/fonts` folder or if using npm, ensure their file path is stored in the `/gulp/config.js` file.
+
+#### External
+All external non SASS files should be referenced in `/gulp/config.js`, otherwise it can be included in `/source/scss/main.scss`.
 
 ## Test
 

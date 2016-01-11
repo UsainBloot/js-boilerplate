@@ -6,9 +6,10 @@
 
   window.App = {};
 
-  /* Home page */
-  if($('body.home').length) {
-      new Page();
-  }
+  $(document).ready(function() {
+
+    new Page();
+
+  });
 
 })();

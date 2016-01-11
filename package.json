@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "My personal boilerplate for JS heavy sites",
   "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UsainBloot/js-gulp-boilerplate.git"
+  },
   "directories": {
     "test": "test"
   },
