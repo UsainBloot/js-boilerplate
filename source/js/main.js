@@ -5,6 +5,10 @@
   var Page = require("./pages/page");
 
   window.App = {};
-  new Page();
+
+  /* Home page */
+  if($('body.home').length) {
+      new Page();
+  }
 
 })();
