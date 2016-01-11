@@ -26,7 +26,7 @@ gulp dev
 
 When using `gulp dev`, the boilerplate will create a **BrowserSync** session which will serve the `/public` folder to all connections on your network.
 
-### gulp
+### Gulp
 All build tasks can be found in the the `/gulp/tasks` directory.
 
 The standard `gulp` task can be found in `/gulp/tasks/default.js`.
