@@ -1,17 +1,15 @@
-module.exports = (function() {
+import data from '../data/data';
+import Module from '../modules/module';
 
-  var data = require("../data/data");
-  var Module = require("../modules/module");
+export default class Page {
 
-  function Page() {
+  constructor() {
     this.init();
   }
 
-  Page.prototype.init = function() {
+  init() {
     new Module();
-    window.App.data = data;
-  };
+    window.app.data = data;
+  }
 
-  return Page;
-
-})();
+}

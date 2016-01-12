@@ -1,12 +1,12 @@
 'use strict';
 
-var config = require('../config');
-var gulp = require('gulp');
-var Server = require('karma').Server;
+import config from '../config';
+import gulp from 'gulp';
+import Server from 'karma';
 
 gulp.task('test', function(done) {
 
-  new Server({
+  new Server.Server({
     configFile: __dirname + config.tests.config,
     singleRun: true
   }, done).start();

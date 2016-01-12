@@ -1,9 +1,9 @@
 # js-gulp-boilerplate
 [![Build Status](https://travis-ci.org/UsainBloot/js-gulp-boilerplate.svg)](https://travis-ci.org/UsainBloot/js-gulp-boilerplate)
 
-A JavaScript and SASS based web app boilerplate complete with automated dev and build gulp tasks.
+An ES2015 JavaScript and SASS based web app boilerplate complete with automated dev and build gulp tasks.
 
-The boilerplate utilises **Gulp** for it's build tasks and **Karma**, **Chai** and **PhantomJS** for unit testing.
+The boilerplate utilises **Babel** for its ES2015 to JavaScript conversion, **Gulp** for it's build tasks and **Karma**, **Chai** and **PhantomJS** for unit testing.
 
 ## Getting Started
 Node and npm are both required to use the boilerplate.

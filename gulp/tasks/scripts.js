@@ -1,24 +1,25 @@
 'use strict';
 
-var config = require('../config');
-var gulp = require('gulp');
-var browserify = require('browserify');
-var html = require('html-browserify');
-var hogan = require('hoganify');
-var watchify = require('watchify');
-var gutil = require('gulp-util');
-var source = require('vinyl-source-stream');
-var buffer = require('vinyl-buffer');
-var sourcemaps = require('gulp-sourcemaps');
-var uglify = require('gulp-uglify');
-var browserSync = require('browser-sync');
+import config from '../config';
+import gulp from 'gulp';
+import browserify from 'browserify';
+import babelify from 'babelify';
+import html from 'html-browserify';
+import hogan from 'hoganify';
+import watchify from 'watchify';
+import gutil from 'gulp-util';
+import source from 'vinyl-source-stream';
+import buffer from 'vinyl-buffer';
+import sourcemaps from 'gulp-sourcemaps';
+import uglify from 'gulp-uglify';
+import browserSync from 'browser-sync';
 
 gulp.task('scripts', function() {
 
-  var bundler = browserify({
+  let bundler = browserify({
     entries: [config.scripts.entryPoint],
     debug: true,
-    transform: [html, hogan]
+    transform: [babelify, html, hogan]
   });
 
   if (global.isDev) {
@@ -31,7 +32,7 @@ gulp.task('scripts', function() {
   }
 
   function rebundle() {
-    var stream = bundler.bundle();
+    let stream = bundler.bundle();
     return stream
       .pipe(source(config.scripts.all))
       .pipe(buffer())

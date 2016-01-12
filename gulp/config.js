@@ -58,7 +58,7 @@ module.exports = {
   },
 
   clean: {
-    src: ['public']
+    src: 'public'
   }
 
 };

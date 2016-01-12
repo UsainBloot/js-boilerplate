@@ -1,15 +1,7 @@
-(function() {
+import Page from './pages/page';
 
-  'use strict';
+window.app = {};
 
-  var Page = require("./pages/page");
-
-  window.App = {};
-
-  $(document).ready(function() {
-
-    new Page();
-
-  });
-
-})();
+$(document).ready(function() {
+  new Page();
+});

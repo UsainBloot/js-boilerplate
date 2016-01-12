@@ -1,8 +1,8 @@
 'use strict';
 
-var config = require('../config');
-var gulp = require('gulp');
-var jshint = require('gulp-jshint');
+import config from '../config';
+import gulp from 'gulp';
+import jshint from 'gulp-jshint';
 
 gulp.task('js-hint', function() {
 

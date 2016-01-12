@@ -1,9 +1,9 @@
 'use strict';
 
-var config = require('../config');
-var gulp = require('gulp');
-var concat = require('gulp-concat');
-var cssNano = require('gulp-cssnano');
+import config from '../config';
+import gulp from 'gulp';
+import concat from 'gulp-concat';
+import cssNano from 'gulp-cssnano';
 
 gulp.task('vendor-css', function() {
 

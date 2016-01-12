@@ -1,9 +1,9 @@
 'use strict';
 
-var config = require('../config');
-var gulp = require('gulp');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
+import config from '../config';
+import gulp from 'gulp';
+import concat from 'gulp-concat';
+import uglify from 'gulp-uglify';
 
 gulp.task('vendor-js', function() {
 

@@ -1,12 +1,12 @@
 'use strict';
 
-var config = require('../config');
-var gulp = require('gulp');
-var sourcemaps = require('gulp-sourcemaps');
-var sass = require('gulp-sass');
-var handleErrors = require('../util/handleErrors');
-var autoprefixer = require('gulp-autoprefixer');
-var browserSync = require('browser-sync');
+import config from '../config';
+import gulp from 'gulp';
+import sourcemaps from 'gulp-sourcemaps';
+import sass from 'gulp-sass';
+import handleErrors from '../util/handleErrors';
+import autoprefixer from 'gulp-autoprefixer';
+import browserSync from 'browser-sync';
 
 gulp.task('styles', function() {
 

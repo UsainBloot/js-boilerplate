@@ -1,13 +1,11 @@
-module.exports = (function() {
+export default class Module {
 
-  function Module() {
+  constructor() {
     this.init();
   }
 
-  Module.prototype.init = function() {
+  init() {
 
-  };
+  }
 
-  return Module;
-
-})();
+}
