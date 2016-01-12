@@ -4,7 +4,7 @@
 
   var Page = require("./pages/page");
 
-  window.App = {};
+  window.app = {};
 
   $(document).ready(function() {
 

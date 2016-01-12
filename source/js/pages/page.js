@@ -9,7 +9,7 @@ module.exports = (function() {
 
   Page.prototype.init = function() {
     new Module();
-    window.App.data = data;
+    window.app.data = data;
   };
 
   return Page;
