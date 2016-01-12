@@ -32,13 +32,13 @@ gulp.task('scripts', function() {
   }
 
   function rebundle() {
-    let stream = bundler.bundle();
+    const stream = bundler.bundle();
     return stream
       .pipe(source(config.scripts.all))
       .pipe(buffer())
-      .pipe(sourcemaps.init())
+      .pipe(sourcemaps.init({ loadMaps: true }))
       .pipe(uglify())
-      .pipe(sourcemaps.write(config.scripts.maps))
+      .pipe(sourcemaps.write())
       .pipe(gulp.dest(config.scripts.dest))
       .pipe(browserSync.stream({
         once: true

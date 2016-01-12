@@ -15,8 +15,7 @@ module.exports = {
     src: ['source/js/**/*.js'],
     entryPoint: './source/js/main.js',
     dest: './public/js',
-    all: 'all.js',
-    maps: './maps'
+    all: 'main.js'
   },
 
   styles: {
