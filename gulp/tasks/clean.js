@@ -2,15 +2,10 @@
 
 var config = require('../config');
 var gulp = require('gulp');
-var clean = require('gulp-clean');
+var del = require('del');
 
 gulp.task('clean', function() {
 
-  return gulp
-    .src(config.clean.src, {
-      read: false,
-      force: true
-    })
-    .pipe(clean());
+  return del([config.clean.src]);
 
 });
