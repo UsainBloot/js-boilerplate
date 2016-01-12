@@ -1,4 +1,4 @@
-# js-gulp-boilerplate
+# js-gulp-boilerplate (ES2015)
 [![Build Status](https://travis-ci.org/UsainBloot/js-gulp-boilerplate.svg?branch=es2015)](https://travis-ci.org/UsainBloot/js-gulp-boilerplate) [![devDependency Status](https://david-dm.org/UsainBloot/js-gulp-boilerplate/dev-status.svg)](https://david-dm.org/UsainBloot/js-gulp-boilerplate#info=devDependencies)
 
 An ES2015 JavaScript and SASS based web app boilerplate complete with automated dev and build gulp tasks.
