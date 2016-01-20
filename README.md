@@ -38,7 +38,7 @@ The tasks are powered by the `/gulp/config.js` file and the majority of project 
 ### JavaScript
 
 #### Structure
-The JavaScript is structered as *pages*, *modules* and *data* and collated using **Browserify**.
+The JavaScript is structured as *pages*, *modules* and *data* and collated using **Browserify**.
 
 You should try to structure JavaScript files based on whether they are page specific (therefore should be in the relevant file in `/source/js/page` folder) otherwise as a *module*.
 
