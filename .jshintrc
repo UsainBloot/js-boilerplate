@@ -8,7 +8,7 @@
     "browser"       : true,   // Standard browser globals e.g. `window`, `document`.
 
     "globals"   : {  // Custom globals.
-      "App": true
+      "app": true
     },
 
     // Development.
