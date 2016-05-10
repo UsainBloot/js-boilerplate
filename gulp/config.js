@@ -28,7 +28,7 @@ module.exports = {
   vendor: {
     js: {
       src: [
-        'node_modules/jquery/dist/jquery.js',
+        '',
       ],
       dest: 'public/js',
       file: 'vendor.js',

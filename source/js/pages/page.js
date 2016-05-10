@@ -1,5 +1,5 @@
 import data from '../data/data';
-import Module from '../modules/module';
+import Component from '../components/component';
 
 export default class Page {
 
@@ -8,7 +8,7 @@ export default class Page {
   }
 
   init() {
-    new Module();
+    new Component();
     window.app.data = data;
   }
 

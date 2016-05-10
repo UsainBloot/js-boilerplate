@@ -45,9 +45,8 @@ You should try to structure JavaScript files based on whether they are page spec
 The entry point is in `/source/js/main.js` and is present on every page. Each page should be required and initialised based on whether the body's class. eg.
 
 ```javascript
-if($('body.pageName').length) {
-  new Page();
-}
+new Page();
+
 ```
 These page JavaScript objects should then require any required modules as well as any static data needed.
 
@@ -58,7 +57,7 @@ The overall call stack should look like this...
     |
     +-- page/page.js
         |
-        +-- module/module.js
+        +-- components/component.js
 ```
 
 #### External Files
