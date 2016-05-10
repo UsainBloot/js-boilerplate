@@ -1,14 +1,14 @@
 module.exports = (function() {
 
   var data = require("../data/data");
-  var Module = require("../components/component");
+  var Component = require("../components/component");
 
   function Page() {
     this.init();
   }
 
   Page.prototype.init = function() {
-    new Module();
+    new Component();
     window.app.data = data;
   };
 

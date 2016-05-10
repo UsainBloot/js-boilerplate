@@ -1,13 +1,13 @@
 module.exports = (function() {
 
-  function Module() {
+  function Component() {
     this.init();
   }
 
-  Module.prototype.init = function() {
+  Component.prototype.init = function() {
 
   };
 
-  return Module;
+  return Component;
 
 })();
