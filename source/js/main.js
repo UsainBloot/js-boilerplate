@@ -6,10 +6,6 @@
 
   window.app = {};
 
-  $(document).ready(function() {
-
-    new Page();
-
-  });
+  new Page();
 
 })();
