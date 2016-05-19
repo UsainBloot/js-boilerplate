@@ -1,0 +1,25 @@
+@mixin px-to-rem($property, $values)
+{
+  $output-px:  "";
+  $output-rem: "";
+
+  @each $value in $values
+  {
+    @if $value != auto and $value != 0
+    {
+      $output-px: #{ $output-px + " " + $value + px };
+      $output-rem: #{ $output-rem + " " + ($value/16) + rem };
+    }
+    @else
+    {
+      $output-px: #{ $output-px + " " + $value };
+      $output-rem: #{ $output-rem + " " + $value };
+    }
+  }
+
+  .ie8 &
+  {
+  	#{$property} : $output-px;
+  }
+  #{$property} : $output-rem;
+}

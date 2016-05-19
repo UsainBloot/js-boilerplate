@@ -2,5 +2,9 @@
 @import 'vars';
 @import 'typography';
 
+/* Mixins */
+@import 'mixins/_clearfix';
+@import 'mixins/_pxtorem';
+
 /* Pages */
 @import 'pages/page';
