@@ -1,15 +1,9 @@
 import data from '../data/data';
 import Component from '../components/component';
 
-export default class Page {
+export default function() {
 
-  constructor() {
-    this.init();
-  }
-
-  init() {
-    new Component();
-    window.app.data = data;
-  }
+  window.app.components.component = new Component();
+  window.app.data = data;
 
 }

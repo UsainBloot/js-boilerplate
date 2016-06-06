@@ -9,5 +9,5 @@ describe("App JS Object", function() {
   it('should have data', function() {
     expect(window.app.data).to.eql(testData.test1);
   });
-  
+
 });
