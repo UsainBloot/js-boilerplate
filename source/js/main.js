@@ -2,10 +2,19 @@
 
   'use strict';
 
-  var Page = require("./pages/page");
-
   window.app = {};
+  window.app.components = {};
 
-  new Page();
+  var pageName = document.querySelector('[data-page]').getAttribute('data-page');
+
+  switch(pageName) {
+    case 'home':
+      require("./pages/page");
+    break;
+
+    default:
+      console.error('No page type found');
+    break;
+  }
 
 })();

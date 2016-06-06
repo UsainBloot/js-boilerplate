@@ -1,5 +1,7 @@
 module.exports = (function() {
 
+  'use strict';
+
   function Component() {
     this.init();
   }
