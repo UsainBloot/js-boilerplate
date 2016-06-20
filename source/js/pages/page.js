@@ -1,9 +1,9 @@
 import data from '../data/data';
-import Component from '../components/component';
+import Module from '../modules/module';
 
 export default function() {
 
-  window.app.components.component = new Component();
+  window.app.modules.module = new Module();
   window.app.data = data;
 
 }

@@ -1,6 +1,6 @@
 import Page from './pages/page';
 
 window.app = {};
-window.app.components = {};
+window.app.modules = {};
 
 new Page();
