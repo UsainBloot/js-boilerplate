@@ -3,7 +3,7 @@
   'use strict';
 
   window.app = {};
-  window.app.components = {};
+  window.app.modules = {};
 
   require("./pages/page");
 
