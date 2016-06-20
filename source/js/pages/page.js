@@ -3,10 +3,10 @@ module.exports = (function() {
   'use strict';
 
   var data = require("../data/data");
-  var Component = require("../components/component");
+  var Module = require("../modules/module");
 
   (function() {
-    window.app.components.component = new Component();
+    window.app.modules.module = new Module();
     window.app.data = data;
   })();
 
