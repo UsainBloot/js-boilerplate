@@ -3,8 +3,9 @@
 @import 'typography';
 
 /* Mixins */
-@import 'mixins/_clearfix';
-@import 'mixins/_pxtorem';
+@import 'mixins/clearfix';
+@import 'mixins/grid';
+@import 'mixins/pxtorem';
 
 /* Pages */
 @import 'pages/page';
