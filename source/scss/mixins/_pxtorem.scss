@@ -8,7 +8,7 @@
     @if $value != auto and $value != 0
     {
       $output-px: #{ $output-px + " " + $value + px };
-      $output-rem: #{ $output-rem + " " + ($value/16) + rem };
+      $output-rem: #{ $output-rem + " " + ($value/$font-size--default) + rem };
     }
     @else
     {
